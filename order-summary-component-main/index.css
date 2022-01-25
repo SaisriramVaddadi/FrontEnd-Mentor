@@ -1,0 +1,102 @@
+:root{
+    --annual__pack_bg: hsl(225, 100%, 98%);
+    --musicIcon__color:  hsl(224, 14%, 68%);
+    --dark__blue: hsl(223, 47%, 23%);
+    --bright__blue:  hsl(245, 75%, 52%);
+    --pale-blue: hsl(225, 100%, 94%);
+}
+
+body{
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-repeat: repeat-x;
+    background-color: var(--pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.orderSummary__container{
+   height: 620px;
+   width: 400px;
+   background-color: white;
+   margin-bottom: 1em;
+   border-radius: 15px;
+}
+
+.illustration__hero{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.orderSummary__bottom{
+    margin: 10px 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.annualPlan__card{
+    width: 350px;
+    height: 80px;
+    background-color: var(--annual__pack_bg);
+    border-radius: 7px;
+    margin-top: 2.5em;
+    display: flex;
+    align-items: center;
+
+}
+.annualPlan__left{
+    flex:0.7;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.music__icon{
+    color: var(--musicIcon__color);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.annualPack-left__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.annualPlan__right{
+    flex:0.3;
+}
+annualPlan__right>a{
+    color: var(--dark__blue) !important;
+}
+.annualPlan__right>a:hover{
+    text-decoration: none;
+}
+
+.payment-button{
+    height: 50px;
+    width: 350px;
+    margin-top: 2.5em;
+    border: none;
+    background-color: var(--bright__blue);
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 17px 15px -15px #111; ;
+}
+
+.cancel-button{
+    height: 50px;
+    width: 350px;
+    background-color: white;
+    margin-top: 1.5em;
+    border: none;
+    border-radius: 10px;
+    color:var(--musicIcon__color);
+    font-weight: 700;
+    cursor: pointer;
+}
